@@ -1,0 +1,136 @@
+明白了，你希望这个 copilot-instructions.md 不仅针对安卓，还能包含 通用编程/软件开发的最佳实践和 AI 指导，比如代码风格、命名规范、错误处理等。这样无论是 Android、后端、还是通用 Kotlin/Java 开发都能用。
+
+我帮你整合成一个 安卓 + 通用编程 的高级 copilot-instructions.md 模板：
+
+
+---
+
+Copilot Instructions for Android Engineers & General Programming
+
+General Programming Guidelines
+
+Use clear and descriptive names for variables, functions, and classes.
+
+Follow SOLID principles wherever applicable.
+
+Write self-documenting code; comments only for complex logic.
+
+Use consistent formatting and indentation.
+
+Prefer immutable structures and avoid unnecessary state mutation.
+
+Avoid hard-coded values; use constants or configuration files.
+
+Handle exceptions gracefully; prefer try-catch or Result/sealed classes rather than crashing.
+
+Write code that is testable; separate concerns for easier unit testing.
+
+Prefer functional constructs (map, filter, reduce) when they improve readability.
+
+
+Android Specific Guidelines
+
+Write code in Kotlin by default.
+
+Use MVVM architecture or recommended architecture patterns.
+
+Leverage Jetpack libraries: LiveData, ViewModel, Room, Navigation, WorkManager.
+
+Avoid deprecated Android APIs.
+
+Keep methods short and modular; prioritize readability.
+
+Add comments for non-trivial logic, but avoid excessive commenting.
+
+Prefer coroutines over AsyncTask or raw threads.
+
+
+UI Components
+
+Use ConstraintLayout by default unless simpler layouts suffice.
+
+Prefer Material Components for buttons, dialogs, text fields, etc.
+
+Use ViewBinding or DataBinding; avoid findViewById.
+
+Use Navigation Component for fragment navigation.
+
+Avoid hard-coded strings; use strings.xml.
+
+
+Networking & Data
+
+Use Retrofit + Kotlin Serialization/Moshi for network calls.
+
+Use Room for local storage.
+
+Wrap network/database calls in Result/sealed classes.
+
+Use Flow or LiveData for reactive data streams.
+
+
+AI Generation Guidelines
+
+Generate concise, readable, and idiomatic Kotlin/Java code.
+
+Avoid generating unnecessary boilerplate or empty classes.
+
+Suggest extension functions, sealed classes, or data classes when appropriate.
+
+Prefer composition over inheritance.
+
+Suggest unit tests for complex logic.
+
+Avoid suggesting deprecated APIs or insecure patterns.
+
+
+Avoid
+
+Avoid using !!; prefer safe calls (?.) or explicit error handling.
+
+Avoid blocking the main thread.
+
+Avoid repeating code; suggest refactoring into functions or extensions.
+
+Avoid hard-coded dimensions, colors, or strings in Android projects.
+
+
+Optional Enhancements
+
+Suggest Kotlin DSL or extension functions for repetitive tasks.
+
+Suggest Compose equivalents if project uses Jetpack Compose.
+
+Recommend design patterns when appropriate for readability or maintainability.
+
+
+
+---
+
+这个文件的亮点：
+
+1. 兼顾 安卓开发 和 通用编程。
+
+
+2. 包含 AI 指令，让 Copilot 更智能地生成安全、可维护的代码。
+
+
+3. 直接可以放到 .github/copilot-instructions.md，AI 会优先遵守。
+
+
+
+
+---
+
+如果你愿意，我可以帮你做一个 “终极版”，加入：
+
+具体目录结构建议（MVVM + Compose + Modules）
+
+常用 Android 库和版本推荐
+
+代码示例模板，AI 会直接生成符合规范的代码片段
+
+
+这样一份文件就完全能替代手动指导 AI 了。
+
+你希望我帮你做这个终极版吗？
